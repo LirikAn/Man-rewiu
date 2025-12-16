@@ -1,0 +1,93 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+env/
+.venv/
+.pytest_cache/
+
+
+backend/venv/
+backend/__pycache__/
+
+# Environment variables
+backend/.env
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+.env.example
+secrets/
+private/
+
+# Logs
+*.log
+logs/
+lerna-debug.log*
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.npm
+.yarn
+package-lock.json
+yarn.lock
+
+# Build files
+/dist
+/build
+/.next
+*.tsbuildinfo
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backend venv
+/backend/venv/
+/backend/__pycache__/
+/backend/*.pyc
+/backend/.env
+/backend/*.egg-info/
+/backend/dist/
+/backend/build/
+
+# Cache
+.cache/
+.eslintcache
+.pytest_cache/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Tokens, credentials, secrets
+*.pem
+*.key
+*.cert
+api_keys.json
+credentials.json

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+body {
+  @apply bg-no-repeat bg-cover bg-center min-h-screen;
+  background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.modern-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl shadow-lg;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modern-button {
+  @apply px-6 py-2.5 rounded-lg font-medium transition-all duration-200;
+  background: var(--primary-gradient);
+  box-shadow: 0 2px 10px rgba(79, 70, 229, 0.2);
+}
+
+.modern-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+input:focus {
+  @apply ring-0 ring-offset-0;
+}
+
+.modern-input {
+  @apply bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm focus:border-indigo-500 focus:bg-white/10 transition-all duration-200;
+}
+
+.minimal-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-200 text-sm;
+}
+
+.minimal-heading {
+  @apply text-2xl font-semibold text-white mb-2;
+}
+
+.minimal-text {
+  @apply text-gray-400 text-sm leading-relaxed;
+}
+
